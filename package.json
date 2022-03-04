@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "launchdarkly-node-server-sdk": "^6.2.0"
+  }
+}
