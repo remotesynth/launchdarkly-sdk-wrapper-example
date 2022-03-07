@@ -15,5 +15,5 @@ function setShowButton(val) {
   let user = new ldUser(await client.getClient());
   setShowButton(await user.getFlagValue("show-button", setShowButton));
 
-  await client.closeClient();
+  // await user.closeClient();
 })();
