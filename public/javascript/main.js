@@ -1316,6 +1316,9 @@
     }
   });
 
+  // env-ns:/Users/brinaldi/Documents/projects/nodesdk-example/.env
+  var LAUNCHDARKLY_CLIENT_ID = "61409b046ca8d52601d179ef";
+
   // lib/ld-client.js
   var LaunchDarkly = require_ldclient_cjs();
   var launchDarklyClient;
@@ -1325,7 +1328,7 @@
         key: "anonymous"
       };
     }
-    const client = LaunchDarkly.initialize("61409b046ca8d52601d179ef", user);
+    const client = LaunchDarkly.initialize(LAUNCHDARKLY_CLIENT_ID, user);
     await client.waitForInitialization();
     return client;
   }

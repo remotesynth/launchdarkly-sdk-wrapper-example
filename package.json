@@ -1,15 +1,20 @@
 {
   "dependencies": {
     "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "http-errors": "^2.0.0",
-    "jade": "^1.11.0",
+    "jade": "^0.31.2",
     "launchdarkly-js-client-sdk": "^2.20.2",
     "launchdarkly-node-server-sdk": "^6.2.0",
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "esbuild scripts/main.js --bundle --outfile=public/javascript/main.js && node ./bin/www"
+    "build": "./build.js",
+    "start": "./build.js && node ./bin/www"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "esbuild": "^0.14.25",
+    "esbuild-envfile-plugin": "^1.0.2"
   }
 }
