@@ -12,7 +12,7 @@ function setShowButton(val) {
 }
 
 router.get("/", async (req, res) => {
-  // client should be a singleton
+  // client is a singleton
   const client = new ldServer();
 
   // each user would be initialized with their info
